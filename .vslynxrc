@@ -1,0 +1,60 @@
+{
+    "repositories": {
+        "sandhills-pdfs": {
+            "type": "s3",
+            "connection": "us04-obj-0",
+            "config": {
+                "bucket": "vsn-apps",
+                "path": "sidekick/data/sandhills-pdfs"
+            }
+        },
+        "deere-pdfs": {
+            "type": "s3",
+            "connection": "us04-obj-0",
+            "config": {
+                "bucket": "vsn-apps",
+                "path": "sidekick/data/deere-pdfs"
+            }
+        },
+        "deere-candf-pdfs": {
+            "type": "s3",
+            "connection": "us04-obj-0",
+            "config": {
+                "bucket": "vsn-apps",
+                "path": "sidekick/data/deere-candf-pdfs"
+            }
+        },
+        "komatsu-pdfs": {
+            "type": "s3",
+            "connection": "us04-obj-0",
+            "config": {
+                "bucket": "vsn-apps",
+                "path": "sidekick/data/komatsu-pdfs"
+            }
+        },
+        "bekaert-pdfs": {
+            "type": "s3",
+            "connection": "us04-obj-0",
+            "config": {
+                "bucket": "vsn-apps",
+                "path": "sidekick/data/bekaert-pdfs"
+            }
+        },
+        "bekaert-images": {
+            "type": "s3",
+            "connection": "us04-obj-0",
+            "config": {
+                "bucket": "vsn-apps",
+                "path": "sidekick/data/bekaert-images"
+            }
+        },
+        "sidekick-constants": {
+            "type": "s3",
+            "connection": "us04-obj-0",
+            "config": {
+                "bucket": "vsn-apps",
+                "path": "sidekick/constants"
+            }
+        }
+    }
+}

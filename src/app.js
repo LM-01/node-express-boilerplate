@@ -1,7 +1,9 @@
 const express = require('express');
+const cron = require('node-cron');
 const helmet = require('helmet');
 const xss = require('xss-clean');
 const mongoSanitize = require('express-mongo-sanitize');
+const logger = require('./config/logger');
 const compression = require('compression');
 const cors = require('cors');
 const passport = require('passport');
@@ -15,6 +17,10 @@ const { errorConverter, errorHandler } = require('./middlewares/error');
 const ApiError = require('./utils/ApiError');
 
 const app = express();
+
+cron.schedule('*/15 * * * * *', function () {
+  logger.info('running a task every 15 seconds');
+});
 
 if (config.env !== 'test') {
   app.use(morgan.successHandler);
